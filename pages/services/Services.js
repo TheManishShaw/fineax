@@ -2,8 +2,7 @@ import React from 'react'
 
 const Services = () => {
   return (
-      <>
-      
+      <>      
       <section className="text-gray-400 bg-gray-800 body-font">
           <div className="container px-5 py-24 mx-auto">
               <div className="text-center mb-20">
