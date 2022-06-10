@@ -13,13 +13,10 @@ const Footer = () => {
                             height={85}
                             alt="Logo"
                         />
-                        <p className="text-white font-bold text-xl py-2 md:p-1">
-                            An Innovation-Driven Company
-                        </p>
+                      
                         <p className="text-white">
-                            We At Fineax As A Home For Creative Minds And Family Of Wonderful
-                            People. We Believe, Respect, And See The Vision Can Support An
-                            Idea And Make It A Reality.
+                            
+                            Fineax Data Solutions works with data gathering, creating qualitative and worthy database for the AI/ML. The main idea or vision of our team was to serve in medical AI related issues since Healthcare technologies are future based and are in high necessity
                         </p>
                         
                     </div>
@@ -104,7 +101,7 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className="container mx-auto px-6">
+            <div className="container mx-auto px-6 ">
                 <div className="mt-5 flex flex-col">
                     <div className="sm:w-2/3 text-left py-6">
                         <p className="text-md text-white font-normal mb-2 tracking-wider">

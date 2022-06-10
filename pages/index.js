@@ -1,21 +1,16 @@
-import Footer from "./components/Footer";
-
-import NavBar from "./components/NavBar/NavBar"
 import Slider from "./components/Slider";
-import Services from "./services/Services";
-
-
-
+import Head from "next/head";
+import HomeContent from "./home/Homecontent";
 
 export default function Home() {
   return (
     <div>
-    
-<NavBar/>
+      <Head>
+        <title> Fineax Data Solution</title>
+      </Head>
+  <Slider/>
+  <HomeContent/>
 
-<Slider/>
-<Services/>
-<Footer/>
     </div>
   )
 }

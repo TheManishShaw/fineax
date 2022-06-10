@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
+import { useRouter } from "next/router";
 import Link from "next/link";
 import Image from "next/image";
 import logo from '/public/assets/images/logo-2.png'
+import About from "../../about";
+
 const navigation = [
     { id: 1, name: "Home", href: "/" },
     { id: 2, name: "Services", href: "/services" },
@@ -15,13 +18,16 @@ const navigation = [
 const NavBar = () => {
     const [nav, setNav] = useState(false);
     const handleClick = () => setNav(!nav);
+    const router = useRouter();
     return (
 
-        <nav className="bg-white shadow dark:bg-gray-800 sticky top-0 animate-none">
+        <nav className="bg-white shadow dark:bg-gray-800 sticky top-0 animate-none z-50">
             <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
                 <div className="flex items-center justify-between">
                     <div>
-                        <a className="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">Brand</a>
+                        <Link href="/">
+                        <a className="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300">Tecblic</a>
+                        </Link>
                     </div> 
                     <div className="flex md:hidden">
                         <button type="button" className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
@@ -33,10 +39,11 @@ const NavBar = () => {
                 </div>
                 <div className="items-center md:flex">
                     <div className="flex flex-col md:flex-row md:mx-6">
-                        <a className="my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Home</a>
-                        <a className="my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Shop</a>
-                        <a className="my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">Contact</a>
-                        <a className="my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0" href="#">About</a>
+                        {navigation.map((item) =>(
+                            <Link key={item.id} href={item.href}>
+                        <a className={`my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0${router.pathname === item.href ? "font-bold text-2xl underline underline-offset-4" : ""}`}>{item.name}</a>
+                            </Link>
+                        ))}
                     </div>
                   
                 </div>

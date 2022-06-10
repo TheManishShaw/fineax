@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState, useEffect, useRef } from 'react';
 import {  ChevronLeft, ChevronRight } from 'heroicons-react'; 
+import Image from 'next/image';
 const featureimage = [
     "/assets/images/banner.png",
     "/assets/images/banner1.png",
@@ -66,7 +67,7 @@ const Slider = () => {
                       </div>
 
                       <div className="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2">
-                          <img className="w-full h-full max-w-xl" src="/assets/images/ai/ai3.webp" alt="#"/>
+                          <Image className="w-full h-full max-w-xl" layout='fill' src="/assets/images/ai/ai3.webp" alt="#"/>
                       </div>
                   </div>
               </div>
