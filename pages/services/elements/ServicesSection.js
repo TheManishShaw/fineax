@@ -3,7 +3,7 @@ import SingleServices from './SingleServices'
 import ServicesData from '../../data/services/ServicesData'
 const ServicesSection = () => {
   return (
-    <>
+        <>
           <section className="text-gray-400 bg-gray-900 body-font">
               <div className="container px-5 py-24 mx-auto">
                   <div className="flex flex-col">
