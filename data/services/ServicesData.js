@@ -3,7 +3,7 @@ const servicesData  = [
         id: 1,
         title: "Facial Recognition",
         img: "/assets/images/services/face.jpg",        
-        description: "Face recognition is one of the important issues in object recognition and computer vision.Face is an important part of human being and requires detection for different applications such as security, forensic investigation.",
+        description: "Face recognition is one of the important issues in object recognition and computer vision.Simply put, you cannot really discuss one without the other.",
         link: "",
     },
     {

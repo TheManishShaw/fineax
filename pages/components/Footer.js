@@ -8,7 +8,7 @@ const Footer = () => {
                 <div className="grid grid-cols-1 gap-8 mt-6 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
                     <div className=" space-y-3 border-1 rounded-xl ">
                         <Image
-                            src="/assets/images/logo-2.png"
+                            src="/assets/images/logo.svg"
                             width={250}
                             height={85}
                             alt="Logo"

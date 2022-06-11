@@ -3,9 +3,10 @@ import { useState, useEffect, useRef } from 'react';
 import {  ChevronLeft, ChevronRight } from 'heroicons-react'; 
 import Image from 'next/image';
 const featureimage = [
-    "/assets/images/banner3.jpg",
+  
     "/assets/images/banner1.png",
-    "/assets/images/banner2.jpg"
+    "/assets/images/banner2.jpeg",
+    "/assets/images/banner4.jpeg",
 ];
 let count = 0;
 let slideInterval;
@@ -47,7 +48,7 @@ const Slider = () => {
 
   return (
       <>
-          <div ref={slideRef} className="w-full xl:h-[80vh] lg:h-[80vh] md:h-auto  bg-no-repeat object-cover bg-cover bg-center flex  justify-between animate-fade-in-up fade-anim" style={{ backgroundImage: `url(${featureimage[currentIndex]})`}}>
+          <div ref={slideRef} className="w-full xl:h-[80vh] lg:h-[80vh] md:h-auto  bg-no-repeat object-cover object-center bg-cover bg-center flex  justify-between animate-fade-in-up fade-anim" style={{ backgroundImage: `url(${featureimage[currentIndex]})`}}>
               <div className="container px-6 py-16 mx-auto">
                   
               </div>
