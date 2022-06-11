@@ -1,6 +1,6 @@
 import React from 'react'
 import SingleTeam from './SingleTeam'
-import teamData from '../../data/team/teamData'
+import teamData from '../../../data/team/TeamData'
 import Head from 'next/head'
 const Teams = () => {
   return (

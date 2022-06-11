@@ -2,9 +2,8 @@ import React, { useState } from "react";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { useRouter } from "next/router";
 import Link from "next/link";
-import Image from "next/image";
-import logo from '/public/assets/images/logo-2.png'
-import About from "../../about";
+
+
 
 const navigation = [
     { id: 1, name: "Home", href: "/" },
@@ -26,7 +25,7 @@ const NavBar = () => {
                 <div className="flex items-center justify-between">
                     <div>
                         <Link href="/">
-                        <a className="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300">Tecblic</a>
+                        <a className="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300">Fineax</a>
                         </Link>
                     </div> 
                     <div className="flex md:hidden">
