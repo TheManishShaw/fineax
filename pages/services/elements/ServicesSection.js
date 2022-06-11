@@ -20,6 +20,7 @@ const ServicesSection = () => {
                           <SingleServices key={item.id} img={item.img} title={item.title} description={item.description} link={item.href} />
                       ))}
                   </div>
+                  
               </div>
           </section>
 
