@@ -1,6 +1,6 @@
 import React from 'react'
 import SingleServices from './SingleServices'
-import servicesData from '/data/services/servicesData'
+import servicesData from '../../../data/services/servicesData';
 const ServicesSection = () => {
   return (
         <>
