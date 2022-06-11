@@ -20,6 +20,13 @@ const serviceContent  = [
         description: "AI in medical has a great role and is future dependent, today patients are expecting lot from technologies to overcome manual surgeries to painless.",
         link: "",
     },
+    {
+        id: 4,
+        title: "Healthcare Datasets.",
+        img: "/assets/images/services/doctor.jpg",
+        description: "AI in medical has a great role and is future dependent, today patients are expecting lot from technologies to overcome manual surgeries to painless.",
+        link: "",
+    },
 ];
 
 export default serviceContent;

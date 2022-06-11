@@ -1,57 +1,94 @@
-import React, { useState } from "react";
-import { MenuIcon, XIcon } from "@heroicons/react/outline";
-import { useRouter } from "next/router";
-import Link from "next/link";
-import Image from "next/image";
+import { useEffect, useRef, useState } from 'react'
+import Link from 'next/link'
 
+// Add this style to your css file
 
+const NavBar =  () => {
 
-const navigation = [
-    { id: 1, name: "Home", href: "/" },
-    { id: 2, name: "Services", href: "/services" },
-    { id: 3, name: "About us", href: "/about" },
-    { id: 4, name: "Contact us", href: "/contact" },
-];
+  const [state, setState] = useState(false)
+  const navRef = useRef()
 
+  // Replace javascript:void(0) path with your path
+  const navigation = [
+      { title: "Home", path: "/" },
+      { title: "Services", path: "/services" },
+      { title: "About Us", path: "/about" },
+      { title: "Contact Us", path: "/contact" },
+     
+  ]
 
+  useEffect(() => {
+      
+      const body = document.body
 
-const NavBar = () => {
-    const [nav, setNav] = useState(false);
-    const handleClick = () => setNav(!nav);
-    const router = useRouter();
-    return (
+      // Disable scrolling
+      const customBodyStyle = ["overflow-hidden", "lg:overflow-visible"]
+      if (state) body.classList.add(...customBodyStyle)
+      // Enable scrolling
+      else body.classList.remove(...customBodyStyle)
 
-        <nav className="bg-white shadow dark:bg-gray-800 sticky top-0 animate-none z-50 mb-0">
-            <div className="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
-                <div className="flex items-center justify-between gap-8">
-                    <div>
-                        <Link href="/">
-                        <a className="text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300">
-                            <Image src="/assets/images/logo.svg" width={400} height={35}/>
-                        </a>
-                        </Link>
-                    </div> 
-                    <div className="flex md:hidden">
-                        <button type="button" className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
-                            <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
-                                <path fillRule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
-                            </svg>
-                        </button>
+      // Sticky strick
+      const customStyle = ["sticky-nav", "fixed"]
+      window.onscroll = () => {
+          if (window.scrollY > 80) navRef.current.classList.add(...customStyle)
+          else navRef.current.classList.remove(...customStyle)
+      }
+    }, [state])
+    
+
+  return (
+      <nav ref={navRef} className="bg-gray-800 w-full top-0 z-20">
+          <div className="items-center px-4 max-w-screen-xl mx-auto lg:flex lg:px-8">
+              <div className="flex items-center justify-between py-3 lg:py-4 lg:block">
+                    <Link href="/">
+                    <a >
+                        <img
+                            src="/assets/images/logo-white.png" 
+                            width={150} 
+                            height={50}
+                            alt="Fineax"
+                        />
+                    </a></Link>
+                  <div className="lg:hidden">
+                      <button className="text-white  outline-none p-2 rounded-md focus:border-gray-400 focus:border"
+                          onClick={() => setState(!state)}
+                      >
+                          {
+                              state ? (
+                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" viewBox="0 0 20 20" fill="currentColor">
+                                      <path fillRule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clipRule="evenodd" />
+                                  </svg>
+                              ) : (
+                                  <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8h16M4 16h16" />
+                                  </svg>
+                              )
+                          }
+                      </button>
+                  </div>
+              </div>
+              <div className={`flex-1 justify-between flex-row-reverse lg:overflow-visible lg:flex lg:pb-0 lg:pr-0 lg:h-auto ${ state ? 'h-screen pb-20 overflow-auto pr-4' : 'hidden'}`}>
+                   
+                    <div className="flex-1">
+                        <ul className="justify-center items-center space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
+                            {
+                                navigation.map((item, idx) => {
+                                    return (
+                                        <li key={idx} className="text-white hover:text-gray-400">
+                                            <Link href={item.path}>
+                                            <a >
+                                                { item.title }
+                                            </a>
+                                            </Link>
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ul>
                     </div>
-                </div>
-                <div className="items-center md:flex hidden">
-                    <div className="flex flex-col md:flex-row md:mx-6">
-                        {navigation.map((item) =>(
-                            <Link key={item.id} href={item.href}>
-                        <a className={`my-1 text-sm font-medium text-gray-700 transition-colors duration-200 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0${router.pathname === item.href ? "font-bold text-2xl underline underline-offset-4" : ""}`}>{item.name}</a>
-                            </Link>
-                        ))}
-                    </div>
-                  
-                </div>
-            </div>
-        </nav>
-    );
-};
-
-export default NavBar;
+              </div>
+          </div>
+      </nav>
+  )
+}
+ export default NavBar;

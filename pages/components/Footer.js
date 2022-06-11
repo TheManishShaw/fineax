@@ -1,117 +1,98 @@
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
+import Image from "next/image"
+import Link from "next/link"
 const Footer = () => {
+
+    const footerNavs = [
+        {
+            id:1,
+            href: '/about',
+            name: 'About'
+        },
+        {
+            id:2,
+            href: '/services',
+            name: 'Services'
+        },
+       
+        {
+            id:3,
+            href: '/contact',
+            name: 'Contact Us'
+        },
+       
+    ]
+
     return (
-        <footer className="footer bg-gray-800 relative pt-1 px-3">
-            <div className="container mx-auto sm:px-3 xl:px-8 lg:px-8 md:px-8">
-                <div className="grid grid-cols-1 gap-8 mt-6 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
-                    <div className=" space-y-3 border-1 rounded-xl ">
-                        <Image
-                            src="/assets/images/logo.svg"
-                            width={250}
-                            height={85}
-                            alt="Logo"
-                        />
-                      
-                        <p className="text-white">
-                            
-                            Fineax Data Solutions works with data gathering, creating qualitative and worthy database for the AI/ML. The main idea or vision of our team was to serve in medical AI related issues since Healthcare technologies are future based and are in high necessity
-                        </p>
-                        
-                    </div>
-                    <div className=" px-0  border-1 rounded-xl  lg:text-center ">
-                        <h1 className="text-2xl font-bold text-white capitalize  px-2">
-                            Menu
-                        </h1>
+        <footer className="text-white bg-gray-800 px-4 py-5  mx-auto">
+            <div className="max-w-lg sm:mx-auto sm:text-center">
+                <Image src="/assets/images/logo-white.png" 
+                width={300} 
+                height={70}
+                alt="Fineax" 
+                className="w-32 sm:mx-auto" />
+                <p className="leading-relaxed mt-2 text-[15px]">
+                Fineax Data Solutions works with data gathering, creating qualitative and worthy database for the AI/ML. The main idea or vision of our team was to serve in medical AI related issues since Healthcare technologies are future based and are in high necessity
+                </p>
+            </div>
+            <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
+                {
+                    footerNavs.map((item) => (
+                        <li  key={item.id} className="hover:text-zinc-300 hover:underline">
+                            <Link href={item.href}>
+                            <a>
+                                { item.name }
+                            </a>
+                            </Link>
+                        </li>
+                    ))
+                }
+            </ul>
+            <div className="mt-8 items-center justify-between sm:flex">
+                <div className="mt-4 sm:mt-0">
+                    &copy; 2022 Fineax All rights reserved developed by &nbsp;
+                    <Link href="https://manish.trapo.in/">
+                        <a className="hover:text-blue-500">
+                     Manish Shaw
+                    </a> 
+                    </Link>
+                </div>
+                <div className="mt-6 sm:mt-0">
+                    <ul className="flex items-center space-x-4">
+                        <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+                            <a href="javascript:void()">
+                            <img src="/assets/images/social/pinterest.svg"/>
+                            </a>
+                        </li>
 
-                        <ul className="">
-                            <li className="text-white py-3">
-                                <Link href="/services" className="cursor-pointer"> Services</Link>
-                            </li>                           
-                            <li className="text-white py-3">
-                                <Link href="/about" className="cursor-pointer">About Us</Link>
-                            </li>
-                            <li className="text-white py-3">
-                                <Link href="/contact" className="cursor-pointer">Contact Us</Link>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className=" space-y-2 sm:p-1">
-                        <h1 className="text-2xl font-bold text-white capitalize ">
-                           Contact Us
-                        </h1>
-                        <p className=' text-xl text-white'><a href='tel:'>+911234567890</a></p>
-                        <p className=' text-xl text-white'><a href='mailto:'>testiung@gmail.com</a></p>
-                        <div className="d-flex pt-4">
-                            <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="#"
-                                className="mr-5"
-                            >
-                                <Image
-                                    src="/assets/images/social/instagram.svg"
-                                    width={30}
-                                    height={30}
-                                    alt="Instagram"
-                                />
+                        <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+                            <a href="javascript:void()">
+                            <img src="/assets/images/social/linkedin.svg"/>
                             </a>
-                            <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="#"
-                                className="mx-5"
-                            >
-                                <Image
-                                    src="/assets/images/social/linkedin.svg"
-                                    width={30}
-                                    height={30}
-                                    alt="Linkedin"
-                                />
+                        </li>
+
+                        <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+                            <a href="javascript:void()">
+                            <img src="/assets/images/social/instagram.svg" />
                             </a>
-                            <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="#"
-                                className="mx-5"
-                            >
-                                <Image
-                                    src="/assets/images/social/facebook.svg"
-                                    width={30}
-                                    height={30}
-                                    alt="Facebook"
-                                />
+                        </li>
+
+                        <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+                            <a href="javascript:void()">
+                               <img src="/assets/images/social/facebook.svg"/>
                             </a>
-                            <a
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                href="#"
-                                className="mx-5"
-                            >
-                                <Image
-                                    src="/assets/images/social/pinterest.svg"
-                                    width={30}
-                                    height={30}
-                                    alt="Pinterest"
-                                />
-                            </a>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-            <div className="container mx-auto px-6 ">
-                <div className="mt-5 flex flex-col">
-                    <div className="sm:w-2/3 text-left py-6">
-                        <p className="text-md text-white font-normal mb-2 tracking-wider">
-                            © Copyright Fineax 2020
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <style jsx>{`
+                .svg-icon path,
+                .svg-icon polygon,
+                .svg-icon rect {
+                    fill: currentColor;
+                }
+            `}</style>
         </footer>
-    );
+    )
 }
 
 export default Footer;
