@@ -1,6 +1,6 @@
 import React from 'react'
 import SingleServices from './SingleServices'
-import servicesData from '../../../data/services/servicesData'
+import servicesData from '/data/services/servicesData'
 const ServicesSection = () => {
   return (
         <>
@@ -20,7 +20,7 @@ const ServicesSection = () => {
                           <SingleServices key={item.id} img={item.img} title={item.title} description={item.description} link={item.href} />
                       ))}
                   </div>
-                  
+
               </div>
           </section>
 
