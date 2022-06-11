@@ -58,25 +58,25 @@ const Footer = () => {
                 </div>
                 <div className="mt-6 sm:mt-0">
                     <ul className="flex items-center space-x-4">
-                        <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+                        <li className="w-10 h-10  rounded-full flex items-center justify-center">
                             <a href="javascript:void()">
                             <img src="/assets/images/social/pinterest.svg"/>
                             </a>
                         </li>
 
-                        <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+                        <li className="w-10 h-10  rounded-full flex items-center justify-center">
                             <a href="javascript:void()">
                             <img src="/assets/images/social/linkedin.svg"/>
                             </a>
                         </li>
 
-                        <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+                        <li className="w-10 h-10  rounded-full flex items-center justify-center">
                             <a href="javascript:void()">
                             <img src="/assets/images/social/instagram.svg" />
                             </a>
                         </li>
 
-                        <li className="w-10 h-10 border rounded-full flex items-center justify-center">
+                        <li className="w-10 h-10  rounded-full flex items-center justify-center">
                             <a href="javascript:void()">
                                <img src="/assets/images/social/facebook.svg"/>
                             </a>
