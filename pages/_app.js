@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <Head>
         <meta name="description" content="Fineax Data Solution company" />
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/favicon.svg" />
       </Head>
     <Component {...pageProps}/>
     </Layout>
