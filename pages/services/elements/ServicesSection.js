@@ -1,6 +1,6 @@
 import React from 'react'
 import SingleServices from './SingleServices'
-import servicesData from '../../../data/services/servicesData';
+import serviceContent from '../../../data/services/serviceContent';
 const ServicesSection = () => {
   return (
         <>
@@ -16,7 +16,7 @@ const ServicesSection = () => {
                       </div>
                   </div>
                   <div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
-                      {servicesData.map((item) => (
+                      {serviceContent.map((item) => (
                           <SingleServices key={item.id} img={item.img} title={item.title} description={item.description} link={item.href} />
                       ))}
                   </div>

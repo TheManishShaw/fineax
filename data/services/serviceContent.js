@@ -1,4 +1,4 @@
-const servicesData  = [
+const serviceContent  = [
     {
         id: 1,
         title: "Facial Recognition",
@@ -22,4 +22,4 @@ const servicesData  = [
     },
 ];
 
-export default servicesData;
+export default serviceContent;
