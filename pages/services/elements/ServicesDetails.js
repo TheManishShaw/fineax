@@ -2,11 +2,11 @@ import { Link } from "heroicons-react";
 
  const ServicesDetails = () => {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div className="px-4 py-16 mx-auto bg-gray-900 md:px-24 lg:px-8 lg:py-20">
       <div className="grid gap-10 lg:grid-cols-2">
         <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
           <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400">
-            <svg className="text-teal-900 w-7 h-7" viewBox="0 0 24 24">
+            <svg className="text-teal-200 w-7 h-7" viewBox="0 0 24 24">
               <polyline
                 fill="none"
                 stroke="currentColor"
@@ -49,7 +49,7 @@ import { Link } from "heroicons-react";
             </svg>
           </div>
           <div className="max-w-xl mb-6">
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-zinc-100 sm:text-4xl sm:leading-none">
               Let us handle
               <br className="hidden md:block" />
               your next{' '}
@@ -57,7 +57,7 @@ import { Link } from "heroicons-react";
                 destination
               </span>
             </h2>
-            <p className="text-base text-gray-700 md:text-lg">
+            <p className="text-base text-gray-100 md:text-lg">
               Sed ut perspiciatis unde omnis iste natus error sit voluptatem
               accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
               quae. explicabo.

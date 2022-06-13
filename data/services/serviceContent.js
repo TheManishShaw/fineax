@@ -4,7 +4,7 @@ const serviceContent  = [
         title: "Facial Recognition",
         img: "/assets/images/services/face.jpg",        
         description: "Face recognition is one of the important issues in object recognition and computer vision.Simply put, you cannot really discuss one without the other.",
-        link: "",
+        href: "/services/ServiceDetails",
     },
     {
         id: 2,
