@@ -12,7 +12,7 @@ const features2 =[
 	{
 		id:1,
 		name:"OUR VISION",
-		img:"",
+		img:"/assets/images/12.jpeg",
 		title:"OUR VISION",
 		description:"“Fineax AI Solutions visualizes the world as smart and skillful in terms of technologies, lifestyle, educations, etc., making it a view of new dimension and ahead to influence people and motivate them towards living hood.”"
 	},
