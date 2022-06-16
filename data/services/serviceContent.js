@@ -8,7 +8,7 @@ const serviceContent  = [
     },
     {
         id: 2,
-        title: "Automated Vehicle/Driver’s Sentiments.",
+        title: "Automated Vehicle",
         img: "/assets/images/services/self_drive.jpg",
         description: "AI and self-driving cars are often complimentary topics in technology. Simply put, you cannot really discuss one without the other. ",
         link: "",
@@ -20,13 +20,7 @@ const serviceContent  = [
         description: "AI in medical has a great role and is future dependent, today patients are expecting lot from technologies to overcome manual surgeries to painless.",
         link: "",
     },
-    {
-        id: 4,
-        title: "Healthcare Datasets.",
-        img: "/assets/images/services/doctor.jpg",
-        description: "AI in medical has a great role and is future dependent, today patients are expecting lot from technologies to overcome manual surgeries to painless.",
-        link: "",
-    },
+
 ];
 
 export default serviceContent;
