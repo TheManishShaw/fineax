@@ -5,7 +5,7 @@ import Head from 'next/head';
 const index = () => {
  
   return (
-      <> 
+      <div className='bg-gray-900'> 
       <Head>
         <title>Services | Fineax</title>
       </Head>
@@ -14,7 +14,7 @@ const index = () => {
           
      
         
-</>
+</div>
   )
 }
 
