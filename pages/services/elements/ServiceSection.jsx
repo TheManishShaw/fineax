@@ -110,7 +110,7 @@ const ServiceSection = () => {
           </h2>
           <p className="text-base leading-relaxed mt-2">AI in medical has a great role and is future dependent, today patients are expecting lot from technologies to overcome manual surgeries to painless.</p>
         </a>
-        <Link  href="/services/Speech">
+        <Link  href="/services/HealthCare">
         <a
         
          
