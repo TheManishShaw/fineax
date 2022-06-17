@@ -11,10 +11,10 @@ const features1 =[
 const features2 =[
 	{
 		id:1,
-		name:"OUR VISION",
+		name:"OUR MISSION",
 		img:"/assets/images/12.jpeg",
-		title:"OUR VISION",
-		description:"“Fineax AI Solutions visualizes the world as smart and skillful in terms of technologies, lifestyle, educations, etc., making it a view of new dimension and ahead to influence people and motivate them towards living hood.”"
+		title:"OUR MISSION",
+		description:"Fineax missions for creating its vision theory making it truthful, worthful, applicable and productive, by creating database to articulate view of new dimension with development towards a skillful society, growing in consistent pattern, driven by our oriented vision"
 	},
 ]
 const Features = () => {

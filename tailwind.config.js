@@ -1,3 +1,4 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -46,10 +47,6 @@ module.exports = {
             transform: 'translateY(10px)'
           },
         }
-
-
-
-
       },
       animation: {
         'fade-in-down': 'fade-in-down 0.5s ease-out',

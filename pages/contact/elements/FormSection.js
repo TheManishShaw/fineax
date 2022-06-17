@@ -1,5 +1,6 @@
 import react,{useState} from "react";
 import { useRouter } from 'next/router';
+import Link from "next/link";
 import swal from "sweetalert";
 const FormSection = () => {
 	const [value, setValue] = useState('');
@@ -18,8 +19,8 @@ const setField = (field, value) =>{
   })
 }
     const SubmitForm = (form) => {
-      const { firstname, phone, email, message} = form;
-   if (firstname && phone && email && message) {
+      const { firstname, email, message} = form;
+   if (firstname && email && message) {
      const res = fetch(
        "https://tecblic-website-form-default-rtdb.asia-southeast1.firebasedatabase.app/razacontactform.json",
        {
@@ -71,13 +72,11 @@ const setField = (field, value) =>{
       setValue(result);
     };
     const validdateForm = () =>{
-      const { firstname, phone, email,message } = form;
+      const { firstname, email,message } = form;
       const newErrors = {}
     
       if(!firstname || firstname === '') newErrors.firstname = 'Please enter your name'
-      if (!phone || phone === "") newErrors.phone = "Please enter a phone no.";
-      
-      else if (!/^[0-9\b]+$/i.test(phone)) {newErrors.phone = "Enter a vaild phone no";}
+   
        
       if (!email || email === "") newErrors.email = "Please enter a valid email";
       else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(email)) {
@@ -107,8 +106,8 @@ const setField = (field, value) =>{
 		<div className="space-y-2">
 			<h2 className="text-4xl font-bold leading-tight lg:text-5xl">Lets talk!</h2>
 			<div className="dark:text-gray-400">Write something for us!</div>
-      <p className="font-bold text-2xl">suport@fineax.in</p>
-            <p className="font-bold text-2xl">+91123456789</p>
+      <Link href="mailto:contact@fineax.ai"><a> <p className="font-bold text-2xl mt-3">contact@fineax.ai</p></a></Link>
+      <Link href="tel:+919979854474"><a>     <p className="font-bold text-2xl mt-3">+91 99798 54474</p></a></Link> 
 		</div>
 		
 	</div>

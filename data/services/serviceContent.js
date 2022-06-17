@@ -3,7 +3,7 @@ const serviceContent  = [
         id: 1,
         title: "Speech/ Audio",
         img: "/assets/images/services/face.jpg",        
-        description: "Face recognition is one of the important issues in object recognition and computer vision.Simply put, you cannot really discuss one without the other.",
+        description: "Get your  high-quality machine learning custom models to classify, extract, and detect sentiment with minimum effort and machine learning expertise using Fineax.",
         href: "/services/Speech",
     },
     {

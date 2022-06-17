@@ -2,15 +2,15 @@ const Testing = () => {
 
   // Replace javascript:void(0) path with your path
   const navigation = [
-      { title: "Customers", path: "javascript:void(0)" },
-      { title: "Careers", path: "javascript:void(0)" },
+      { title: "Customers",  },
+      { title: "Careers",  },
   ]
   
     return (
         <div className="bg-gray-900">
             <header>
                 <nav className="items-center pt-5 px-4 mx-auto max-w-screen-xl sm:px-8 sm:flex sm:space-x-6">
-                    <a href="javascript:void(0)">
+                    <a>
                         <img
                             src="https://www.floatui.com/images/logo.svg" 
                             width={120} 

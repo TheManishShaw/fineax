@@ -1,19 +1,17 @@
-import Slider from "./components/Slider";
-import Head from "next/head";
-import HomeContent from "./home/Homecontent";
-import ServiceSection from "./services/elements/ServicesSection"
-import Testing from "./components/Testing";
+import Slider from "../components/slider/Slider";
 import Features from "./home/elements/Features";
+import Head from "next/head";
+import ServiceSection from "./services/elements/ServiceSection";
+
 export default function Home() {
   return (
     <div>
       <Head>
-        <title> Fineax Data Solution</title>
+        <title>Home | Fineax</title>
       </Head>
-  <Slider/>
-  <ServiceSection/>
-  <HomeContent/>
-  <Features/>
+     <Slider/>
+     <ServiceSection/>
+     <Features/>
     </div>
   )
 }

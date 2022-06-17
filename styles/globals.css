@@ -1,30 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('http://fonts.cdnfonts.com/css/space-age');
-
-.fade-anim img {
-    animation:  fadeAnim 0.5s ease-in-out;
-}
-@keyframes fadeAnim {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-.sticky-nav {
-    animation: sticky-nav 300ms;
-}
-   
-@keyframes sticky-nav {
-   0% {
-       transform: translateY(-6em)
-   }
-
-   100% {
-       transform: translateY(0)
-   }
-}
