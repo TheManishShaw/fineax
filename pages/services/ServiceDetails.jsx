@@ -1,15 +1,15 @@
 import Head from 'next/head';
 import React from 'react'
-import ServicesDetails from './elements/ServicesDetails';
-import ServicesSection from './elements/ServicesSection';
+import ServiceDetailsView from './elements/ServiceDetailsView'
+import ServiceSection from './elements/ServiceSection';
 const ServiceDetails = () => {
   return (
     <div>
         <Head>
             <title> Service Details | Fineax</title>
         </Head>
-      <ServicesDetails />
-      <ServicesSection/>
+      <ServiceDetailsView />
+      <ServiceSection/>
     </div>
   );
 }

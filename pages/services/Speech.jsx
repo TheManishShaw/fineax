@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceDetails from "./elements/ServiceDetails";
+import ServiceDetails from "./elements/ServiceDetailsView";
 import ServiceSection from "./elements/ServiceSection";
 import Head from "next/head";
 const Speech = () => {

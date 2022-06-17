@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceDetails from "./elements/ServiceDetails";
+import ServiceDetailsView from "./elements/ServiceDetailsView";
 import ServiceSection from "./elements/ServiceSection";
 import Head from "next/head";
 const features = [
@@ -35,7 +35,7 @@ const Computer = () => {
         <title> Computer Vision | Fineax</title>
       </Head>
 
-      <ServiceDetails
+      <ServiceDetailsView
         heading="Speech/ Audio "
         heading1=""
         description="Acquiring, processing, analyzing and understanding digital images/videos and extraction of high- from the real world in order to produce numerical or symbolic information with Fineax Expertized and our Qaulityze data, working with numerous visions such as"

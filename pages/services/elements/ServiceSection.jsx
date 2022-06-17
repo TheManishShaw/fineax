@@ -28,7 +28,7 @@ const ServiceSection = () => {
           <img
             alt="content"
             className="object-cover object-center h-full w-full"         
-            src="/assets/images/services/face.jpg"
+            src="/assets/images/audio.jpg"
           />
         </div>
        
@@ -36,14 +36,10 @@ const ServiceSection = () => {
           <h2 className="text-xl font-medium title-font text-white mt-5">
           Speech/ Audio
           </h2>
-          <p className="text-base leading-relaxed mt-2">Get your  high-quality machine learning custom models to classify, extract, and detect sentiment with minimum effort and machine learning expertise using Fineax.</p>
+          <p className="text-base leading-relaxed mt-2">Speech recognition has a long history with several waves of major innovations. Most recently, the field has benefited from advances in deep learning and big data.</p>
         </a>
         <Link  href="/services/Speech">
-        <a
-       
-         
-          className="text-indigo-400 inline-flex items-center mt-3 cursor-pointer"
-        >
+        <a className="text-indigo-400 inline-flex items-center mt-3 cursor-pointer">
           Learn More
           <svg
             fill="none"

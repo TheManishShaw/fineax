@@ -31,10 +31,7 @@ const Footer = () => {
           className="w-32 sm:mx-auto"
         />
         <p className="leading-relaxed mt-2 text-[15px]">
-          Fineax Data Solutions works with data gathering, creating qualitative
-          and worthy database for the AI/ML. The main idea or vision of our team
-          was to serve in medical AI related issues since Healthcare
-          technologies are future based and are in high necessity
+        Fineax is one stop problem solving in artificial intelligence and machine learning          systematically through a range of possible actions in order to reduce the distance of your predefined goal or solution. Our team is skilled through most efficient search strategies andplanning an advanced problem-solving technique through training and practice and are best at finding good solutions to the competitions.
         </p>
       </div>
       <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
