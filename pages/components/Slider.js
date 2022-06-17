@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState, useEffect, useRef } from 'react';
-import {  ChevronLeft, ChevronRight } from 'heroicons-react'; 
-import Image from 'next/image';
+
 const featureimage = [
   
     "/assets/images/banner1.png",

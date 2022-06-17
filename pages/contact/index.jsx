@@ -7,8 +7,7 @@ const index = () => {
     <>
       <Head>
         <title>Contact | Fineax</title>
-      </Head>
-      
+      </Head>      
       <FormSection />
     </>
   );
