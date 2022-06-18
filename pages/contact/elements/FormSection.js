@@ -107,7 +107,7 @@ const setField = (field, value) =>{
 			<h2 className="text-4xl font-bold leading-tight lg:text-5xl">Lets talk!</h2>
 			<div className="dark:text-gray-400">Write something for us!</div>
       <Link href="mailto:contact@fineax.ai"><a> <p className="font-bold text-2xl mt-3">contact@fineax.ai</p></a></Link>
-      <Link href="tel:+919979854474"><a>     <p className="font-bold text-2xl mt-3">+91 99798 54474</p></a></Link> 
+      {/* <Link href="tel:+919825308113"><a>     <p className="font-bold text-2xl mt-3">+91 9825308113</p></a></Link>  */}
 		</div>
 		
 	</div>

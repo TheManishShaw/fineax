@@ -7,7 +7,7 @@ const NavBar = () => {
   const [state, setState] = useState(false);
   const navRef = useRef();
 
-  // Replace javascript:void(0) path with your path
+ 
   const navigation = [
     { title: "Home", path: "/" },
     { title: "Services", path: "/services" },
