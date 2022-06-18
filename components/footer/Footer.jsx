@@ -22,7 +22,7 @@ const Footer = () => {
 
   return (
     <footer className="text-white bg-gray-800 px-4 py-5  mx-auto">
-      <div className="max-w-lg sm:mx-auto sm:text-center">
+      <div className="max-w-xl sm:mx-auto sm:text-center">
         <Image
           src="/assets/images/logo-white.png"
           width={300}

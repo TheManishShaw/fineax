@@ -2,6 +2,8 @@ import Slider from "../components/slider/Slider";
 import Features from "./home/elements/Features";
 import Head from "next/head";
 import ServiceSection from "./services/elements/ServiceSection";
+import HomeContent from "./home/Homecontent";
+import OurBest from "./services/elements/OurBest";
 
 export default function Home() {
   return (
@@ -10,8 +12,11 @@ export default function Home() {
         <title>Home | Fineax</title>
       </Head>
      <Slider/>
-     <ServiceSection/>
      <Features/>
+     
+     
+     <OurBest/>
+     <ServiceSection/>
     </div>
   )
 }
