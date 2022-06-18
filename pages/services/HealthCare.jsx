@@ -2,6 +2,7 @@ import React from "react";
 import ServiceDetailsView from "./elements/ServiceDetailsView";
 import ServiceSection from "./elements/ServiceSection";
 import Head from "next/head";
+import FormSection from "../contact/elements/FormSection";
 const HealthCare = () => {
   return (
     <div>
@@ -16,6 +17,8 @@ const HealthCare = () => {
         img2="/assets/images/health3.jpeg"
         img3="/assets/images/health1.jpeg"
       />
+    
+      <FormSection/>
       <ServiceSection />
     </div>
   );

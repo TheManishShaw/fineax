@@ -25,7 +25,7 @@ const features = [
       id: 4,
       heading: "Our best Healthcare Datasets",
       description:
-        "High-Quality Images in DICOM format extracted from different machines   customized as per requirement by our clients, maintaining all the necessities especially slice thickness, modality of scan, age groups are available along   with clinical reports, de-identified/ PII maintained by our Radiologist and finely sourced.",
+        "High-Quality Images in DICOM format extracted from different machines customized as per requirement by our clients, maintaining all the necessities.",
         img:"/assets/images/health.jpeg",
       },
   ];

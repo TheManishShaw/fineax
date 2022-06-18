@@ -9,7 +9,8 @@ const index = () => {
       <Head>
         <title>Services | Fineax</title>
       </Head>
-      <Banner title="DISCOVER INNOVATION AND POSSIBILITIES" img="/assets/images/aibot.png"/>
+      <Banner title="  Get high quality data services for your AI/ML. DISCOVER INNOVATION
+AND POSSIBILITIES" img="/assets/images/aibot.png"/>
       <ServiceSection />
     </div>
   );

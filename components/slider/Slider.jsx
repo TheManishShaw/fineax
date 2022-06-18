@@ -54,17 +54,7 @@ const Slider = () => {
           {/* 
                   <button onClick={handleOnPreviousClick} className='text-white bg-zinc-300 p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition '><ChevronLeft size={30} /></button>
                   <button onClick={handleOnNextClick} className='text-white bg-zinc-300 p-1 rounded-full bg-opacity-50 cursor-pointer hover:bg-opacity-100 transition'><ChevronRight size={30} /></button> */}
- <div className="max-w-2xl mx-auto text-center relative bg-blend-darken	">
- <div className="w-full  opacity-60  overflow-hidden  bg-gradient-to-r from-[#010101]   blur-2xl "></div>
 
-                <div className="py-4">
-                    <h3 className="xl:text-6xl lg:text-4xl md:text-xl mt-0 sm:text-md text-4xl text-gray-200   font-extrabold">
-                    Get high quality data services for your AI/ML.
-                    </h3>
-                   
-                </div>
-             
-            </div>
            
       
         </div>

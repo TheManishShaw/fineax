@@ -104,7 +104,7 @@ const setField = (field, value) =>{
 			
 	<div className="flex flex-col justify-between">
 		<div className="space-y-2">
-			<h2 className="text-4xl font-bold leading-tight lg:text-5xl">Lets talk!</h2>
+			<h2 className="text-4xl font-bold leading-tight lg:text-5xl">Can&apos;t find what you want lets talk!</h2>
 			<div className="dark:text-gray-400">Write something for us!</div>
       <Link href="mailto:contact@fineax.ai"><a> <p className="font-bold text-2xl mt-3">contact@fineax.ai</p></a></Link>
       {/* <Link href="tel:+919825308113"><a>     <p className="font-bold text-2xl mt-3">+91 9825308113</p></a></Link>  */}

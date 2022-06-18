@@ -55,7 +55,7 @@ const ServiceSection = () => {
           <img
             alt="content"
             className="object-cover object-center h-full w-full"         
-            src="/assets/images/services/self_drive.jpg"
+            src="/assets/images/health3.jpeg"
           />
         </div>
        
@@ -63,7 +63,7 @@ const ServiceSection = () => {
           <h2 className="text-xl font-medium title-font text-white mt-5">
           Computer Vision
           </h2>
-          <p className="text-base leading-relaxed mt-2">AI and self-driving cars are often complimentary topics in technology. Simply put, you cannot really discuss one without the other. </p>
+          <p className="text-base leading-relaxed mt-2">Boost your system working on visual world with our energy efficient solutions along with cost and time effectiveness. </p>
         </a>
         <Link   href="/services/Computer">
         <a
