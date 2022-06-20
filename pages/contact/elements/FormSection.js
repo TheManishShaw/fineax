@@ -2,6 +2,8 @@ import react,{useState} from "react";
 import { useRouter } from 'next/router';
 import Link from "next/link";
 import swal from "sweetalert";
+import emailjs from '@emailjs/browser';
+
 const FormSection = () => {
 	const [value, setValue] = useState('');
     const router = useRouter()
@@ -47,6 +49,12 @@ const setField = (field, value) =>{
          text: "Your message has been successfully sent. We will contact you very soon!",
          icon: "success",
          button: "okay",
+       });
+       emailjs.sendForm('service_q878793', 'template_bal5jwv', form.current, 'tLuKrvbT6qzbOOmy3')
+       .then((result) => {
+           console.log(result.text);
+       }, (error) => {
+           console.log(error.text);
        });
      } else {
        swal({
