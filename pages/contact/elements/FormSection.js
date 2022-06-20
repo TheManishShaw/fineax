@@ -20,7 +20,7 @@ const setField = (field, value) =>{
     [field]:null
   })
 }
-    const SubmitForm = (form) => {
+    const SubmitForm = (e) => {
       const { firstname, email, message} = form;
    if (firstname && email && message) {
      const res = fetch(
@@ -50,12 +50,21 @@ const setField = (field, value) =>{
          icon: "success",
          button: "okay",
        });
-       emailjs.sendForm('service_q878793', 'template_bal5jwv', form.current, 'tLuKrvbT6qzbOOmy3')
-       .then((result) => {
+       emailjs
+       .sendForm(
+         "service_q878793",
+         "template_bal5jwv",
+         e.target,
+         "tLuKrvbT6qzbOOmy3"
+       )
+       .then(
+         (result) => {
            console.log(result.text);
-       }, (error) => {
+         },
+         (error) => {
            console.log(error.text);
-       });
+         }
+       );
      } else {
        swal({
          title: "Someting went worng",
