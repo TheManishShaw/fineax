@@ -46,7 +46,7 @@ const Footer = () => {
       <div className="mt-8 items-center justify-between sm:flex">
         <div className="mt-4 sm:mt-0">
           &copy; 2022 Fineax All rights reserved developed by &nbsp;
-          <Link href="https://manish.trapo.in/">
+          <Link href="https://manishshaw.in/">
             <a className="hover:text-blue-500">Manish Shaw</a>
           </Link>
         </div>
