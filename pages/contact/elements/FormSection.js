@@ -117,7 +117,7 @@ const setField = (field, value) =>{
     };
   return (
     <div>
-    <div className="grid  grid-cols-1 gap-8 px-8 py-16 mx-auto  md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 dark:bg-gray-900 dark:text-gray-100">
+    <div className="grid  grid-cols-1 gap-8 px-8 py-16 mx-auto  md:grid-cols-2 md:px-12 lg:px-16 xl:px-32 bg-gray-900 text-gray-100">
 			
 	<div className="flex flex-col justify-between">
 		<div className="space-y-2">
