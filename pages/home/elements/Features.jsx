@@ -20,9 +20,9 @@ const features2 =[
 const Features = () => {
   return (
     <>
-    <section className="p-4 lg:p-8 bg-gray-800 text-white">
+    <section className="p-4 lg:p-8 bg-gray-900 text-white">
 	{features1.map((item) =>(
-			<div key={item.id} className="container mx-auto bg-gray-600 space-y-12 mb-5">
+			<div key={item.id} className="container mx-auto bg-gray-700 space-y-12 mb-5">
 				<div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">				
 					<img src={item.img} alt={item.name} className="h-80 dark:bg-gray-500 aspect-video" />
 					<div className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
@@ -33,7 +33,7 @@ const Features = () => {
 			</div>
 		))}
 		{features2.map((item) =>(
-				<div key={item.id} className="container bg-gray-600 mx-auto space-y-12 mb-4">
+				<div key={item.id} className="container bg-gray-700 mx-auto space-y-12 mb-4">
 				<div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">
 				<div  className="flex flex-col justify-center flex-1 p-6 dark:bg-gray-900">
 						<h3 className="text-3xl font-bold">{item.title}</h3>
