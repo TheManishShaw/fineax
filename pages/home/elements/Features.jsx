@@ -20,7 +20,7 @@ const features2 =[
 const Features = () => {
   return (
     <>
-    <section className="p-4 lg:p-8 dark:bg-gray-800 dark:text-gray-100">
+    <section className="p-4 lg:p-8 bg-gray-800 text-white">
 	{features1.map((item) =>(
 			<div key={item.id} className="container mx-auto space-y-12 mb-5">
 				<div className="flex flex-col overflow-hidden rounded-md shadow-sm lg:flex-row">				
