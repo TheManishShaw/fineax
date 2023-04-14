@@ -11,12 +11,9 @@ export default function Home() {
       <Head>
         <title>Home | Fineax</title>
       </Head>
-     <Slider/>
-     <Features/>
-     
-     
-     <OurBest/>
-     <ServiceSection/>
+      <div className="flex items-center justify-center h-screen">
+        <h1 className="text-2xl font-bold">Site Under Maintenance</h1>
+      </div>
     </div>
-  )
+  );
 }
