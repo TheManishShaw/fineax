@@ -31,7 +31,12 @@ const Footer = () => {
           className="w-32 sm:mx-auto"
         />
         <p className="leading-relaxed mt-2 text-[15px]">
-        Fineax is one stop problem solving in artificial intelligence and machine learning          systematically through a range of possible actions in order to reduce the distance of your predefined goal or solution. Our team is skilled through most efficient search strategies andplanning an advanced problem-solving technique through training and practice and are best at finding good solutions to the competitions.
+          Fineax is one stop problem solving in artificial intelligence and
+          machine learning systematically through a range of possible actions in
+          order to reduce the distance of your predefined goal or solution. Our
+          team is skilled through most efficient search strategies andplanning
+          an advanced problem-solving technique through training and practice
+          and are best at finding good solutions to the competitions.
         </p>
       </div>
       <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">
@@ -54,7 +59,10 @@ const Footer = () => {
           <ul className="flex items-center space-x-4">
             <li className="w-10 h-10  rounded-full flex items-center justify-center">
               <a href="#">
-                <img src="/assets/images/social/pinterest.svg" alt="pinterest" />
+                <img
+                  src="/assets/images/social/pinterest.svg"
+                  alt="pinterest"
+                />
               </a>
             </li>
 
@@ -66,7 +74,10 @@ const Footer = () => {
 
             <li className="w-10 h-10  rounded-full flex items-center justify-center">
               <a href="#">
-                <img src="/assets/images/social/instagram.svg" alt="instagram" />
+                <img
+                  src="/assets/images/social/instagram.svg"
+                  alt="instagram"
+                />
               </a>
             </li>
 
@@ -78,7 +89,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <style jsx>{`
+      <style>{`
         .svg-icon path,
         .svg-icon polygon,
         .svg-icon rect {
