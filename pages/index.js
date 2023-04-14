@@ -14,6 +14,12 @@ export default function Home() {
       <div className="flex items-center justify-center h-screen">
         <h1 className="text-2xl font-bold">Site Under Maintenance</h1>
       </div>
+      {/* <Slider/>
+     <Features/>
+     
+     
+     <OurBest/>
+     <ServiceSection/> */}
     </div>
   );
 }
